@@ -164,3 +164,69 @@ h3 {
 /* **************************** */
 
 
+.container {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  font-weight: 400;
+  background: #ffffff;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 27px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #999999;
+  background: #ffffff;
+  border: 3px solid #999999;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  -webkit-transition: ease-out 0.5s;
+  -moz-transition: ease-out 0.5s;
+}
+
+
+.btn.btn-border-3::after,
+.btn.btn-border-3::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  transition: .5s;
+}
+
+.btn.btn-border-3::after {
+  top: -9px;
+  left: -9px;
+  border-top: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+
+.btn.btn-border-3::before {
+  bottom: -9px;
+  right: -9px;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+}
+
+.btn.btn-border-3:hover {
+  color: #222222;
+}
+
+.btn.btn-border-3:hover::after,
+.btn.btn-border-3:hover::before {
+  width: 30px;
+  height: 30px;
+  border-color: #222222;
+}
+
+
+/* ******************* */
+
+
