@@ -42,11 +42,19 @@ const Main = (totalCard) => {
     }
   };
 
-
-
   return (
     <>
-      
+      <div className="app-container mb-5">
+        <div className="container">
+          <div className="row py-5">
+            <div className="col-md-12 text-center">
+                <a href="/">
+              <h3 className="animate-charcter">Pokédex</h3>
+                </a>
+            </div>
+          </div>
+        </div>
+        </div>
     </>
   );
 };
