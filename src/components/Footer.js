@@ -1,5 +1,8 @@
 import React from "react";
 import logo from "../media/Pokedex.png";
+import { SiLinkedin } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
+import { BsGithub } from "react-icons/bs";
 
 export const Footer = () => {
   return (
