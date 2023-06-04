@@ -34,7 +34,13 @@ const Main = (totalCard) => {
         return uniquePokemons;
       });
 
-
+      setNextUrl(data.next);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching Pokemon:', error);
+      setIsLoading(false);
+    }
+  };
 
 
 
