@@ -52,7 +52,11 @@ const Main = (totalCard) => {
     setFilterType(event.target.value);
   };
 
-
+  const filteredPokemons = pokemons.filter((pokemon) => {
+    const nameMatch = pokemon.name.toLowerCase().includes(searchTerm.toLowerCase());
+    const typeMatch = filterType === '' || pokemon.types.some((type) => type.type.name === filterType);
+    return nameMatch && typeMatch;
+  });
 
   return (
     <>
