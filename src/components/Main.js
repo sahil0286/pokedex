@@ -28,6 +28,12 @@ const Main = (totalCard) => {
         })
       );
 
+      setPokemons((prevPokemons) => {
+        const allPokemons = [...prevPokemons, ...fetchedPokemons];
+        const uniquePokemons = [...new Map(allPokemons.map((pokemon) => [pokemon.id, pokemon])).values()];
+        return uniquePokemons;
+      });
+
 
 
 
