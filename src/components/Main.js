@@ -120,7 +120,11 @@ const Main = (totalCard) => {
               ))
             )}
           </div>
-          
+          {filteredPokemons.length > 0 && nextUrl && (
+            <button className="load-more btn btn-border-3 mb-5 mt-4" onClick={handleLoadMore}>
+              Load more
+            </button>
+          )}
         </div>
       </div>
     </>
