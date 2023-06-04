@@ -29,7 +29,46 @@ export const Footer = () => {
           </span>
         </div>
 
-
+        <ul className=" nav col-md-4 justify-content-end  align-items-center list-unstyled d-flex">
+          <li className="ms-3">
+            <a
+              className="text-body-secondary"
+              href="https://www.linkedin.com/in/sahilfakir/"
+              target="blank"
+            >
+              {" "}
+              <p style={{fontSize:"25px"}}>
+                {" "}
+                <SiLinkedin />
+              </p>
+            </a>
+          </li>
+          <li className="ms-3">
+            <a
+              className="text-body-secondary"
+              href="mailto:fakirsahil0286@gamil.com"
+            >
+              {" "}
+              <p style={{fontSize:"33px"}}>
+                {" "}
+                <MdEmail />
+              </p>
+            </a>
+          </li>
+          <li className="ms-3">
+            <a
+              className="text-body-secondary"
+              href="https://github.com/sahil0286"
+              target="blank"
+            >
+              {" "}
+              <p style={{fontSize:"25px"}}>
+                {" "}
+                <BsGithub />
+              </p>
+            </a>
+          </li>
+        </ul>
       </footer>
     </>
   );
