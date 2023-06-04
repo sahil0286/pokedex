@@ -1,6 +1,6 @@
 # Pokédex React API Project
 
-The TopNews API Project is a web application that allows users to browse for news articles by category from various sources.
+Pokédex web application built using React and an API to fetch Pokémon data and It allows users to search for Pokémon and filter them by there type.
 
 ## Features
 
