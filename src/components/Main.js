@@ -42,7 +42,9 @@ const Main = (totalCard) => {
     }
   };
 
-
+  const handleLoadMore = () => {
+    fetchPokemons(nextUrl);
+  };
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
@@ -99,6 +101,26 @@ const Main = (totalCard) => {
             <option value="ghost">Ghost</option>
             <option value="bug">Bug</option>
           </select>
+        </div>
+        <div className="pokemon-container">
+          <div className="all-container">
+            {isLoading ? (
+              <p>Loading Pokémon...</p>
+            ) : filteredPokemons.length === 0 ? (
+              <p>No Pokémon found.</p>
+            ) : (
+              filteredPokemons.map((pokemon) => (
+                <PokemonCard
+                  key={pokemon.id}
+                  id={pokemon.id}
+                  image={pokemon.sprites.other.dream_world.front_default}
+                  name={pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
+                  type={pokemon.types[0].type.name}
+                />
+              ))
+            )}
+          </div>
+          
         </div>
       </div>
     </>
