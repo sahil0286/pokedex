@@ -42,6 +42,18 @@ const Main = (totalCard) => {
     }
   };
 
+
+
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleFilterChange = (event) => {
+    setFilterType(event.target.value);
+  };
+
+
+
   return (
     <>
       <div className="app-container mb-5">
@@ -54,7 +66,37 @@ const Main = (totalCard) => {
             </div>
           </div>
         </div>
+        <div className='d-flex justify-content-center'>
+          <input
+            type="text"
+            style={{
+            //   marginLeft: "40%",
+              marginBottom: "30px",
+              marginRight: "1%",
+              borderRadius: "5px",
+              padding: "3px 10px"
+            }}
+            placeholder="🔍 Search Pokemon"
+            value={searchTerm}
+            onChange={handleSearchChange}
+          />
+          <select
+            style={{ borderRadius: "5px", border: "2px solid gray", padding: "3px 7px", height: "32px" }}
+            value={filterType}
+            onChange={handleFilterChange}
+          >
+            <option value="">All Types</option>
+            <option value="water">Water</option>
+            <option value="fire">Fire</option>
+            <option value="rock">Rock</option>
+            <option value="electric">Electric</option>
+            <option value="normal">Normal</option>
+            <option value="grass">Grass</option>
+            <option value="ghost">Ghost</option>
+            <option value="bug">Bug</option>
+          </select>
         </div>
+      </div>
     </>
   );
 };
