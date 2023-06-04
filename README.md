@@ -11,6 +11,21 @@ The TopNews API Project is a web application that allows users to browse for new
 
 ## Screenshot
 
+![p1](https://github.com/sahil0286/pokedex/assets/119412630/51086e40-b9e7-4055-9044-ad4cdf73918c)
+
+![p2](https://github.com/sahil0286/pokedex/assets/119412630/e611c8d8-8710-45c5-8d69-58d4042a8ed0)
+
+![p3](https://github.com/sahil0286/pokedex/assets/119412630/5cdd5f3e-4d3a-4693-9619-82bc71c88a9e)
+
+![p4](https://github.com/sahil0286/pokedex/assets/119412630/9c512cc3-3914-43e7-8c53-251fc9c0b54b)
+
+![p5](https://github.com/sahil0286/pokedex/assets/119412630/c25b40f0-33be-48ef-85ff-9717d3f09db5)
+
+![p6](https://github.com/sahil0286/pokedex/assets/119412630/a00489c8-770c-4b29-986b-dfad08f6d404)
+
+![p7](https://github.com/sahil0286/pokedex/assets/119412630/d1f5eb11-0e7e-4e4d-8cb9-a36180bacab8)
+
+![p8](https://github.com/sahil0286/pokedex/assets/119412630/a8da534c-8b38-43ad-b606-137c7a5dadab)
 
 ## Getting Started
 
